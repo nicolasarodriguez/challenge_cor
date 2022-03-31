@@ -1,5 +1,5 @@
 import React from 'react'
-import { shape, string } from 'prop-types'
+import { shape, string, func } from 'prop-types'
 
 import { STATUS, PRIORITY } from '../../utils/constants'
 import { createDropDown } from '../../utils/utils'
@@ -13,7 +13,8 @@ const TaskData = ({
     priority,
     status,
     description
-  }
+  },
+  onChangeHandler,
 }) => {
   return (
     <div className={`${namespace}`}>
@@ -21,7 +22,7 @@ const TaskData = ({
         <div>
           <p>
             <span>Prioridad:</span>
-            <select>
+            <select onChange={(event) => onChangeHandler(event, id, 'priority')}>
               { createDropDown(PRIORITY, priority) }
             </select>
           </p>
@@ -29,7 +30,7 @@ const TaskData = ({
         <div>
           <p>
             <span>Estado:</span>
-            <select>
+            <select onChange={(event) => onChangeHandler(event, id, 'status')}>
             { createDropDown(STATUS, status) }
             </select>
           </p>
@@ -47,7 +48,8 @@ TaskData.propTypes = {
     priority: string.isRequired,
     status: string.isRequired,
     description: string.isRequired
-  }).isRequired
+  }).isRequired,
+  onChangeHandler: func.isRequired,
 }
 
 export default TaskData

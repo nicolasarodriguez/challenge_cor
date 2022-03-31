@@ -7,20 +7,24 @@ import EmptyState from '../EmptyState'
 const namespace = 'tasklist'
 
 const TaskList = ({ list, setList, priorityFilter, statusFilter }) => {
-  const onChangeStatus = e => {
-    const { name, value } = e.target
-    const updateList = list.map(item => ({
-      ...item,
-      status: item.id === name ? value : item.done
-    }))
-    setList(updateList)
+  const onChangeHandler = (event, id, property) => {
+    const { value } = event.target
+    const objIndex = list.findIndex((obj => obj.id === id));
+    list[objIndex][property] = value
+    setList(list)
   }
 
   const todoItems = list.filter(item => (
     !((statusFilter !== 'all' && item.status !== statusFilter) ||
     (priorityFilter !== 'all' && item.priority !== priorityFilter))
   )).map(filteredItem => {
-    return (<TaskData key={filteredItem.id} data={filteredItem} onChange={onChangeStatus} />)
+    return (
+      <TaskData
+        key={filteredItem.id}
+        data={filteredItem}
+        onChangeHandler={onChangeHandler}
+      />
+    )
   })
 
   const renderResult = () => {
