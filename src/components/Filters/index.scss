@@ -1,0 +1,19 @@
+@import '../../styles/variales.scss';
+
+.filters {
+    margin: 0 auto 20px;
+    max-width: $max-width;
+
+    &__title {
+        margin: 0 0 10px;
+    }
+
+    &__box {
+        display: flex;
+        grid-gap: 20px;
+
+        span {
+            padding: 0 10px 0 0;
+        }
+    }
+}

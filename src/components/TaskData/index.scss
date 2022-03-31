@@ -1,0 +1,26 @@
+.taskdata {
+    border: 1px solid #eee;
+    margin: 0 0 20px;
+    padding: 20px;
+
+    h2, p {
+        margin: 0
+    }
+
+    &__card:last-child {
+        margin: 0;
+    }
+
+    &__info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        span {
+            padding: 0 10px 0 0;
+        }
+    }
+
+    &__title {
+        padding: 10px 0;
+    }
+}

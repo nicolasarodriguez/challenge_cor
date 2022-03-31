@@ -1,0 +1,13 @@
+.emptystate {
+    text-align: center;
+
+    &__image {
+        height: 250px;
+        width: 250px;
+    }
+
+    &__text {
+        font-size: 25px;
+        font-weight: 600;
+    }
+}

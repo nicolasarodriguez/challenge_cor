@@ -1,0 +1,28 @@
+@import './components/FormTodo';
+@import './components/Filters';
+@import './components/TaskData';
+@import './components/TaskList';
+@import './components/EmptyState';
+
+body {
+  background: #b2c2e5;
+  color: $font-color;
+  font-family: $font-family;
+  font-size: $font-size-standard;
+}
+
+.app {
+  margin: 20px;
+}
+
+select {
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+input, textarea {
+  border-radius: 4px;
+  border: 1px solid #666;
+  font-family: $font-family;
+  font-size: $font-size-standard;
+}
