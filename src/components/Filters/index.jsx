@@ -4,7 +4,7 @@ import { func } from 'prop-types'
 import { STATUS, PRIORITY } from '../../utils/constants'
 import { createDropDown } from '../../utils/utils'
 
-const namespace = 'filters'
+const namespace = 'ui-filters'
 
 const Filters = ({ setPriorityFilter, setStatusFilter }) => {
   return (

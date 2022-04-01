@@ -1,7 +1,7 @@
 import React from 'react'
 import { string } from 'prop-types'
 
-const namespace = 'emptystate'
+const namespace = 'ui-emptystate'
 
 const EmptyState = ({
   text,
@@ -9,7 +9,11 @@ const EmptyState = ({
 }) => {
   return (
     <div className={`${namespace}`}>
-        <img className={`${namespace}__image`} src={process.env.PUBLIC_URL + '/assets/' + image} />
+        <img
+          className={`${namespace}__image`}
+          src={process.env.PUBLIC_URL + '/assets/' + image}
+          alt='empty state'
+        />
         <p className={`${namespace}__text`}>{text}</p>
     </div>
   )

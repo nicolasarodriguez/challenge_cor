@@ -1,16 +1,25 @@
 import React from 'react'
 import { array, func, string } from 'prop-types'
 
+import Card from 'react-bootstrap/Card'
+
 import TaskData from '../TaskData'
 import EmptyState from '../EmptyState'
 
-const namespace = 'tasklist'
+const namespace = 'ui-tasklist'
 
 const TaskList = ({ list, setList, priorityFilter, statusFilter }) => {
+  console.log(list);
   const onChangeHandler = (event, id, property) => {
     const { value } = event.target
     const objIndex = list.findIndex((obj => obj.id === id));
     list[objIndex][property] = value
+    setList(list)
+  }
+
+  const deleteTask = (id) => {
+    const objIndex = list.findIndex((obj => obj.id === id));
+    list.splice(objIndex, 1);
     setList(list)
   }
 
@@ -23,6 +32,7 @@ const TaskList = ({ list, setList, priorityFilter, statusFilter }) => {
         key={filteredItem.id}
         data={filteredItem}
         onChangeHandler={onChangeHandler}
+        deleteTask={deleteTask}
       />
     )
   })
@@ -40,9 +50,11 @@ const TaskList = ({ list, setList, priorityFilter, statusFilter }) => {
   }
 
   return (
-    <div className={`${namespace}`}>
-      {renderResult()}
-    </div>
+    <Card className={`${namespace}`}>
+      <Card.Body>
+        {renderResult()}
+      </Card.Body>
+    </Card>
   )
 }
 
