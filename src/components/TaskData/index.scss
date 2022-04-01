@@ -1,3 +1,5 @@
+@import '../../styles/variales.scss';
+
 .ui-taskdata {
     margin: 0 0 20px;
 
@@ -52,5 +54,21 @@
 
     &__button-container {
         text-align: right;
+    }
+}
+
+@media (max-width: $breakpoint) {
+    .ui-taskdata {
+        &__info {
+            grid-template-columns: repeat(1, 1fr);
+
+            div {
+               margin-bottom: 10px;
+            }
+
+            select, button {
+                width: 100%
+            }
+        }
     }
 }

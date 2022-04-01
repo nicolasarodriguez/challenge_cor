@@ -17,3 +17,15 @@
         }
     }
 }
+
+@media (max-width: $breakpoint) {
+    .ui-filters {
+        &__box {
+            display: block;
+
+            div {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

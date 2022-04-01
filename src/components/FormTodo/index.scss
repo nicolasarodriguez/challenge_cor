@@ -10,7 +10,7 @@
         grid-template-columns: repeat(3, 1fr);
         padding: 0 0 20px;
 
-        input {
+        input, select {
             font-size: $font-size-standard;
             font-family: $font-family;
             padding: 10px;
@@ -29,16 +29,16 @@
             padding: 10px;
         }
     }
+}
 
-    &__input--submit {
-        cursor: pointer;
-        display: block;
-        margin: 0 auto;
-        padding: 8px 10px;
-        width: auto;
+@media (max-width: $breakpoint) {
+    .ui-formtodo {
+        &__input--text {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
-        &:disabled {
-            cursor: default;
+        button {
+            width: 100%;
         }
     }
 }

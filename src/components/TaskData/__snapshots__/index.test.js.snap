@@ -62,9 +62,11 @@ Object {
                 </select>
               </p>
             </div>
-            <div>
+            <div
+              class="ui-taskdata__button-container"
+            >
               <button
-                class="btn btn-primary"
+                class="btn btn-danger"
                 type="button"
               >
                 Eliminar
@@ -85,7 +87,9 @@ Object {
           <p>
             Descripcion
             <br />
-            Descripcion
+            <span>
+              Descripcion
+            </span>
           </p>
         </div>
       </div>
@@ -149,9 +153,11 @@ Object {
               </select>
             </p>
           </div>
-          <div>
+          <div
+            class="ui-taskdata__button-container"
+          >
             <button
-              class="btn btn-primary"
+              class="btn btn-danger"
               type="button"
             >
               Eliminar
@@ -172,7 +178,9 @@ Object {
         <p>
           Descripcion
           <br />
-          Descripcion
+          <span>
+            Descripcion
+          </span>
         </p>
       </div>
     </div>
