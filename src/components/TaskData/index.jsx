@@ -38,6 +38,10 @@ const TaskData = ({
     handleClose();
   }
 
+  const formatDescription = () => {
+    return description.replace(/(?:\r\n|\r|\n)/g, '<br />');
+  }
+
   return (
     <>
       <Card className={taskStyle}>
@@ -59,15 +63,17 @@ const TaskData = ({
                 </select>
               </p>
             </div>
-            <div>
-              <Button variant="primary" onClick={handleShow}>
+            <div className={`${namespace}__button-container`}>
+              <Button variant="danger" onClick={handleShow}>
                 Eliminar
               </Button>
             </div>
           </div>
           <span className={`${namespace}__id`}>#{id}</span>
           <h2 className={`${namespace}__title`}>{title}</h2>
-          <p>Descripcion<br />{description}</p>
+          <p>Descripcion<br />
+            <span dangerouslySetInnerHTML={{ __html: formatDescription() }} />
+          </p>
         </Card.Body>
       </Card>
       
@@ -81,7 +87,7 @@ const TaskData = ({
           <Button variant="secondary" onClick={handleClose}>
             Cancelar
           </Button>
-          <Button variant="primary" onClick={onDeleteHandler}>
+          <Button variant="danger" onClick={onDeleteHandler}>
             Eliminar
           </Button>
         </Modal.Footer>
