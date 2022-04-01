@@ -10,6 +10,9 @@ const namespace = 'ui-tasklist'
 
 const TaskList = ({ list, setList, priorityFilter, statusFilter }) => {
   console.log(list);
+  console.log(setList);
+  console.log(priorityFilter);
+  console.log(statusFilter);
   const onChangeHandler = (event, id, property) => {
     const { value } = event.target
     const objIndex = list.findIndex((obj => obj.id === id));

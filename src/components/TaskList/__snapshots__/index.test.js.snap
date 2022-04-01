@@ -1,3 +1,569 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders learn react link 1`] = `[Function]`;
+exports[`<TaskList /> should match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="ui-tasklist card"
+      >
+        <div
+          class="card-body"
+        >
+          <div
+            class="ui-taskdata ui-taskdata--high card"
+          >
+            <div
+              class="card-body"
+            >
+              <div
+                class="ui-taskdata__info"
+              >
+                <div>
+                  <p>
+                    <span>
+                      Prioridad:
+                    </span>
+                    <select>
+                      <option
+                        value="HIGH"
+                      >
+                        Alta
+                      </option>
+                      <option
+                        value="MEDIUM"
+                      >
+                        Media
+                      </option>
+                      <option
+                        value="LOW"
+                      >
+                        Baja
+                      </option>
+                    </select>
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    <span>
+                      Estado:
+                    </span>
+                    <select>
+                      <option
+                        value="NEW"
+                      >
+                        Nueva
+                      </option>
+                      <option
+                        value="IN_PROGRESS"
+                      >
+                        En proceso
+                      </option>
+                      <option
+                        value="DONE"
+                      >
+                        Finalizada
+                      </option>
+                    </select>
+                  </p>
+                </div>
+                <div>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                  >
+                    Eliminar
+                  </button>
+                </div>
+              </div>
+              <span
+                class="ui-taskdata__id"
+              >
+                #
+                1648826951727
+              </span>
+              <h2
+                class="ui-taskdata__title"
+              >
+                Titulo
+              </h2>
+              <p>
+                Descripcion
+                <br />
+                Descripcion
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="ui-tasklist card"
+    >
+      <div
+        class="card-body"
+      >
+        <div
+          class="ui-taskdata ui-taskdata--high card"
+        >
+          <div
+            class="card-body"
+          >
+            <div
+              class="ui-taskdata__info"
+            >
+              <div>
+                <p>
+                  <span>
+                    Prioridad:
+                  </span>
+                  <select>
+                    <option
+                      value="HIGH"
+                    >
+                      Alta
+                    </option>
+                    <option
+                      value="MEDIUM"
+                    >
+                      Media
+                    </option>
+                    <option
+                      value="LOW"
+                    >
+                      Baja
+                    </option>
+                  </select>
+                </p>
+              </div>
+              <div>
+                <p>
+                  <span>
+                    Estado:
+                  </span>
+                  <select>
+                    <option
+                      value="NEW"
+                    >
+                      Nueva
+                    </option>
+                    <option
+                      value="IN_PROGRESS"
+                    >
+                      En proceso
+                    </option>
+                    <option
+                      value="DONE"
+                    >
+                      Finalizada
+                    </option>
+                  </select>
+                </p>
+              </div>
+              <div>
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                >
+                  Eliminar
+                </button>
+              </div>
+            </div>
+            <span
+              class="ui-taskdata__id"
+            >
+              #
+              1648826951727
+            </span>
+            <h2
+              class="ui-taskdata__title"
+            >
+              Titulo
+            </h2>
+            <p>
+              Descripcion
+              <br />
+              Descripcion
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`<TaskList /> should match snapshot with emptyState 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="ui-tasklist card"
+      >
+        <div
+          class="card-body"
+        >
+          <div
+            class="ui-emptystate"
+          >
+            <img
+              alt="empty state"
+              class="ui-emptystate__image"
+              src="/assets/no-tasks.jpg"
+            />
+            <p
+              class="ui-emptystate__text"
+            >
+              No hay tareas cargadas
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="ui-tasklist card"
+    >
+      <div
+        class="card-body"
+      >
+        <div
+          class="ui-emptystate"
+        >
+          <img
+            alt="empty state"
+            class="ui-emptystate__image"
+            src="/assets/no-tasks.jpg"
+          />
+          <p
+            class="ui-emptystate__text"
+          >
+            No hay tareas cargadas
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`<TaskList /> should match snapshot with no results 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="ui-tasklist card"
+      >
+        <div
+          class="card-body"
+        >
+          <div
+            class="ui-emptystate"
+          >
+            <img
+              alt="empty state"
+              class="ui-emptystate__image"
+              src="/assets/no-results.jpg"
+            />
+            <p
+              class="ui-emptystate__text"
+            >
+              No se encontro ningun resultado
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="ui-tasklist card"
+    >
+      <div
+        class="card-body"
+      >
+        <div
+          class="ui-emptystate"
+        >
+          <img
+            alt="empty state"
+            class="ui-emptystate__image"
+            src="/assets/no-results.jpg"
+          />
+          <p
+            class="ui-emptystate__text"
+          >
+            No se encontro ningun resultado
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`<TaskList /> should match snapshot with no tasks 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="ui-tasklist card"
+      >
+        <div
+          class="card-body"
+        >
+          <div
+            class="ui-emptystate"
+          >
+            <img
+              alt="empty state"
+              class="ui-emptystate__image"
+              src="/assets/no-tasks.jpg"
+            />
+            <p
+              class="ui-emptystate__text"
+            >
+              No hay tareas cargadas
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="ui-tasklist card"
+    >
+      <div
+        class="card-body"
+      >
+        <div
+          class="ui-emptystate"
+        >
+          <img
+            alt="empty state"
+            class="ui-emptystate__image"
+            src="/assets/no-tasks.jpg"
+          />
+          <p
+            class="ui-emptystate__text"
+          >
+            No hay tareas cargadas
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
