@@ -1,5 +1,6 @@
+/* eslint-disable testing-library/no-node-access */
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 
 import TaskData from './index';
 
@@ -35,5 +36,25 @@ describe('<TaskData />', () => {
         const title = screen.getByText('Titulo');
         expect(title).toBeInTheDocument();
         expect(view).toMatchSnapshot();
+    });
+
+    it('should call onChangeHandler when select priority change', () => {
+        const { props } = setup();
+        const select = document.getElementById('select-priority');
+        
+        expect(select).toBeInTheDocument();
+        fireEvent.change(select, { target: { value: 'LOW' } })
+        
+        expect(props.onChangeHandler).toBeCalled();
+    });
+
+    it('should call onChangeHandler when select status change', () => {
+        const { props } = setup();
+        const select = document.getElementById('select-status');
+        
+        expect(select).toBeInTheDocument();
+        fireEvent.change(select, { target: { value: 'IN_PROGRESS' } })
+        
+        expect(props.onChangeHandler).toBeCalled();
     });
 });

@@ -19,7 +19,9 @@ Object {
                 <span>
                   Prioridad:
                 </span>
-                <select>
+                <select
+                  id="select-priority"
+                >
                   <option
                     value="HIGH"
                   >
@@ -43,7 +45,9 @@ Object {
                 <span>
                   Estado:
                 </span>
-                <select>
+                <select
+                  id="select-status"
+                >
                   <option
                     value="NEW"
                   >
@@ -110,7 +114,9 @@ Object {
               <span>
                 Prioridad:
               </span>
-              <select>
+              <select
+                id="select-priority"
+              >
                 <option
                   value="HIGH"
                 >
@@ -134,7 +140,9 @@ Object {
               <span>
                 Estado:
               </span>
-              <select>
+              <select
+                id="select-status"
+              >
                 <option
                   value="NEW"
                 >

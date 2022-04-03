@@ -9,21 +9,18 @@ import EmptyState from '../EmptyState'
 const namespace = 'ui-tasklist'
 
 const TaskList = ({ list, setList, priorityFilter, statusFilter }) => {
-  console.log(list);
-  console.log(setList);
-  console.log(priorityFilter);
-  console.log(statusFilter);
   const onChangeHandler = (event, id, property) => {
     const { value } = event.target
     const objIndex = list.findIndex((obj => obj.id === id));
     list[objIndex][property] = value
-    setList(list)
+    setList([...list])
   }
 
   const deleteTask = (id) => {
     const objIndex = list.findIndex((obj => obj.id === id));
     list.splice(objIndex, 1);
-    setList(list)
+    setList([...list])
+    
   }
 
   const todoItems = list.filter(item => (

@@ -50,7 +50,7 @@ const TaskData = ({
             <div>
               <p>
                 <span>Prioridad:</span>
-                <select onChange={(event) => onChangeHandler(event, id, 'priority')}>
+                <select id="select-priority" onChange={(event) => onChangeHandler(event, id, 'priority')}>
                   { createDropDown(PRIORITY, priority) }
                 </select>
               </p>
@@ -58,7 +58,7 @@ const TaskData = ({
             <div>
               <p>
                 <span>Estado:</span>
-                <select onChange={(event) => onChangeHandler(event, id, 'status')}>
+                <select id="select-status" onChange={(event) => onChangeHandler(event, id, 'status')}>
                 { createDropDown(STATUS, status) }
                 </select>
               </p>
